@@ -5,7 +5,7 @@ import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
-  <img src="./icons/arapq.jpg">
+  <img src="./components/icons/arapq.jpg">
 </template>
 
 <style scoped>
