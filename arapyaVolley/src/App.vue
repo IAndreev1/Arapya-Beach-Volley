@@ -1,6 +1,12 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
+import { inject } from '@vercel/analytics';
+
+export default () => {
+  inject();
+};
+
 </script>
 
 <template>
