@@ -1,30 +1,27 @@
 
 
 <template>
-
-  <router-view></router-view>
-
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  </head>
+  <div class="conteiner">
+    <img src="src/assets/FIRST.jpg" class = "bigPhoto">
+    <h1 class = "textA">Arapya Beach Volley</h1>
+  </div>
+  <field image= '1' src = "src/assets/FIRST.jpg"/>
 </template>
 
+<script>
 
-
-<script >
-import {RouterLink, RouterView} from 'vue-router'
-import HelloWorld from './components/Field.vue'
-import Field from "@/components/Field.vue";
+import {defineComponent} from "vue";
 import field from "@/components/Field.vue";
 
-export default {
-  name: "App",
-  components: {
-  field : field
-
-  }
-}
+export default defineComponent({
+  components: {field}
+})
 </script>
 
 <style scoped>
-
 .conteiner {
   position: relative;
   text-align: center;
@@ -45,12 +42,6 @@ export default {
 }
 
 .bigPhoto {
-
-}
-
-
-@media (min-width: 1024px) {
-
 
 }
 </style>
