@@ -5,17 +5,16 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
   </head>
   <div class="conteiner">
-    <img src="src/assets/FIRST.jpg" class = "bigPhoto">
+    <img src="./icons/sofia-1.jpg" class = "bigPhoto">
     <h1 class = "textA">Arapya Beach Volley</h1>
   </div>
-  <field image= '1' src = "src/assets/FIRST.jpg"/>
+  <img src="./icons/sofia-1.jpg" class = "bigPhoto">
 </template>
 
 <script>
 
 import {defineComponent} from "vue";
 import field from "@/components/Field.vue";
-import imageSrc from '@/assets/FIRST.jpg';
 export default {
   components: {field},
   build: {

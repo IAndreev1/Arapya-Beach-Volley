@@ -13,7 +13,7 @@
 
 export default {
   props: {
-    src:String
+    src:URL
   },
 
 }
