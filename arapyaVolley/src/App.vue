@@ -8,7 +8,7 @@
     <img src="./components/icons/FIRST.jpg" class = "bigPhoto">
     <h1 class = "textA">Arapya Beach Volley</h1>
   </div>
-  <field image= '1' src = "src/components/icons/arapq.jpg"/>
+  <field image= '1' src = "../src/components/icons/arapq.jpg"/>
 
 
 </template>
