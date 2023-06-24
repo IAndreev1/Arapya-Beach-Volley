@@ -32,7 +32,7 @@ img {
 }
 .infoBlog{
   margin: 10em;
-  width: ;
+
   background: #2c3e50;
   padding: 1em;
   display: flex;
