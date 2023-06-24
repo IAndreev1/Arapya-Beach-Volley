@@ -15,10 +15,15 @@
 
 import {defineComponent} from "vue";
 import field from "@/components/Field.vue";
-
-export default defineComponent({
-  components: {field}
-})
+import imageSrc from '@/assets/FIRST.jpg';
+export default {
+  components: {field},
+  build: {
+    rollupOptions: {
+      external: ['/src/assets/FIRST.jpg']
+    }
+  }
+}
 </script>
 
 <style scoped>
