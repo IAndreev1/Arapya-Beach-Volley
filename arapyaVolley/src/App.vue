@@ -5,10 +5,10 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
   </head>
   <div class="conteiner">
-    <img src="assets/FIRST.jpg" class = "bigPhoto">
+    <img src="./assets/FIRST.jpg" class = "bigPhoto">
     <h1 class = "textA">Arapya Beach Volley</h1>
   </div>
-  <field image= '1' src = "public/arapq.jpg"/>
+  <field image= '1' src = "src/assets/FIRST.jpg"/>
 
 
 </template>

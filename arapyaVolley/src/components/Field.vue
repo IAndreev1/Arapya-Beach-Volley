@@ -1,7 +1,7 @@
 <template>
   <div class = "infoBlog">
     <div>hello</div>
-    <img :src="getSrc"/>
+    <img :src="src">
   </div>
 
 
@@ -13,17 +13,9 @@
 
 export default {
   props: {
-    image:Number,
     src:String
   },
 
-  computed:{
-    getSrc(){
-      if(this.image == 1){
-        return "src/components/icons/arapq.jpg"
-      }
-    }
-  }
 }
 
 
