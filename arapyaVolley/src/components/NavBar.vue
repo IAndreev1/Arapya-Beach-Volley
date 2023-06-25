@@ -5,10 +5,9 @@
     <h1>Arapya Beach Volley</h1>
     <nav>
       <ul>
-        <li :class="{ 'active': activeStart === 'yes' }"><a href="#">Начало</a></li>
-
-        <li :class="{ 'active': activeGallery === 'yes' }"><a href="#">Галерия</a></li>
-        <li :class="{ 'active': activeNext === 'yes' }"><a href="#">Контакти</a></li>
+        <li :class="{ 'active': activeStart === 'yes' }"><router-link to="/">Начало</router-link></li>
+        <li :class="{ 'active': activeGallery === 'yes' }"><router-link to="/gallery">Галерия</router-link></li>
+        <li :class="{ 'active': activeNext === 'yes' }"><router-link to="/contacts">Контакти</router-link></li>
       </ul>
     </nav>
 
@@ -74,6 +73,7 @@ nav a {
 
 .active a {
   color: black;
+  font-weight: bold;
 }
 
 h1 {
