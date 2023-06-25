@@ -32,13 +32,10 @@ export default {
 <style scoped>
 .header-class {
   background: #55d6aa;
-  padding: 0 1em;
-
+  padding: 0 3em;
 }
 
-img {
 
-}
 
 header::after {
   content: '';
@@ -93,5 +90,12 @@ h1 {
   margin: 10px 20px; /* Adjust the margin as needed */
   line-height: 1;
   vertical-align: middle;
+}
+
+@media (max-width: 1200px) {
+  .header-class {
+    background: #55d6aa;
+    padding: 0 1em;
+  }
 }
 </style>
