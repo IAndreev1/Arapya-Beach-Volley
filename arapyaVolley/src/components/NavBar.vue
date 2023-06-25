@@ -31,17 +31,18 @@ export default {
 
 <style scoped>
 .header-class {
-  background: #55d6aa;
+  background: white;
   padding: 0 3em;
   display: grid;
-  grid-template-columns: 5% 55% 40%;
+  grid-template-columns: 10% 50% 40%;
+  justify-content: space-evenly;
   max-width: 100vw
 }
 
 
 .logo {
-  padding: 1em 0;
-  max-height: 4em;
+  justify-self: center;
+  max-height: 5em;
 
 }
 
@@ -83,7 +84,7 @@ h1 {
   vertical-align: middle;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 920px) {
   .header-class {
     padding: 0 1em;
     background: #f8f8f8;
@@ -95,14 +96,14 @@ h1 {
   nav li {
     display: inline-block;
     margin-left: 0.5em; /* Adjust the margin as needed */
-    padding-top: 1em;
+    padding-top: 1.5em;
   }
 
   nav a {
     color: #444;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 

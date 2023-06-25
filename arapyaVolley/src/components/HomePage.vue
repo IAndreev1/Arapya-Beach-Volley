@@ -2,26 +2,19 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-
   </head>
-  <body id="MyBody">
-
+  <body>
   <NavBar active-gallery="yes" active-next="no" class="header-class"/>
-  <div class="container">
-
-    <img src="./icons/sofia-1.jpg" class="bigPhoto">
-
-  </div>
-  <div class="container">
-    <div>
-      AAAA
+  <main>
+    <div class="containerM">
+      <img src="./icons/sofia-1.jpg" class="bigPhoto">
     </div>
-
-  </div>
-  <div class="container">
-    <img src="./icons/sofia-1.jpg" class="bigPhoto">
-
-  </div>
+    <div class="container">
+      <img src="./icons/sofia-1.jpg" class="smallImg">
+      <p class = "smallText">Статиите в Уикипедия често са цитирани както от медиите, така и в академичните среди: големите ѝ предимства са нейното свободно разпространение и списване, както и широкият ѝ обхват на теми. Редакторите са насърчавани да се придържат към политиката на „Неутрална гледна точка“
+      </p>
+    </div>
+  </main>
   </body>
 </template>
 
@@ -42,62 +35,60 @@ export default {
 </script>
 
 <style scoped>
-.container {
-  display: flex;
+
+main{
+  display: grid;
+  column-count: 1;
+
+}
+.containerM{
+  display:flex;
   justify-content: center;
-  align-items: center;
   width: 100%;
 }
+.container {
 
-.container-text {
-
+  display:grid;
+  grid-template-columns: 50% 50%;
+  width: 100%;
+  background: #FE9B05;
 }
-.header-class{
+
+main {
+  padding-top: 4em;
+}
+
+.header-class {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
 }
-.textA {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -70%); /* Center horizontally and vertically */
-  font-family: 'Montserrat', sans-serif; /* Apply the Montserrat font */
-  font-size: 6em; /* Adjust the font size as needed */
-  opacity: 0.8;
-  color: white;
+
+.smallImg{
+  max-width: 90%;
+  padding: 1em;
+  justify-self: center;
 }
 
-.textA1 {
-  position: static;
-  transform: none;
-  font-size: 3em;
+.smallText{
+  font-family: 'Montserrat', sans-serif;
+  font-size:25px;
+  padding:1em;
+  justify-self: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color:white;
+  text-align: center;
+
 }
-
-
-.navbar {
-  overflow: hidden;
-  background-color: #333;
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
-  width: 100%; /* Full width */
-}
-
 .bigPhoto {
-  max-width: 95vw
-}
+  max-width: 30vw
 
-
-
-.site-header {
-  background: cornflowerblue;
-  color: ghostwhite;
-  padding: 10px 5%;
 
 }
 
 .site-header h1 {
   margin: 0;
 }
+
 </style>
