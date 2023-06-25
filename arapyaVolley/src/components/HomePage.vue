@@ -83,13 +83,7 @@ export default {
   max-width: 100vw
 }
 
-.clearfix:after {
-  content: ".";
-  display: block;
-  height: 0;
-  clear: both;
-  visibility: hidden;
-}
+
 
 .site-header {
   background: cornflowerblue;

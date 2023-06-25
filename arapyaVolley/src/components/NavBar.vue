@@ -1,16 +1,16 @@
 <template>
   <header class="header-class">
 
-      <img src="../assets/logo.ico" class="logo">
-      <h1>Arapya Beach Volley</h1>
-      <nav>
-        <ul>
-          <li :class="{ 'active': activeStart === 'yes' }"><a href="#" >Начало</a></li>
+    <img src="../assets/logo.ico" class="logo">
+    <h1>Arapya Beach Volley</h1>
+    <nav>
+      <ul>
+        <li :class="{ 'active': activeStart === 'yes' }"><a href="#">Начало</a></li>
 
-          <li :class="{ 'active': activeGallery === 'yes' }"><a href="#" >Галерия</a></li>
-          <li :class="{ 'active': activeNext === 'yes' }"><a href="#" >Контакти</a></li>
-        </ul>
-      </nav>
+        <li :class="{ 'active': activeGallery === 'yes' }"><a href="#">Галерия</a></li>
+        <li :class="{ 'active': activeNext === 'yes' }"><a href="#">Контакти</a></li>
+      </ul>
+    </nav>
 
   </header>
 
@@ -20,11 +20,11 @@
 <script>
 export default {
 
-    props: {
-      activeStart:String,
-      activeGallery: String,
-      activeNext: String
-    }
+  props: {
+    activeStart: String,
+    activeGallery: String,
+    activeNext: String
+  }
 }
 
 </script>
@@ -34,17 +34,12 @@ export default {
   background: #55d6aa;
   padding: 0 3em;
   display: grid;
-  grid-template-columns: 2em 10em 20em;
+  grid-template-columns: 5% 55% 40%;
   max-width: 100vw
 }
 
 
 
-header::after {
-  content: '';
-  display: table;
-  clear: both;
-}
 
 .logo {
   padding: 10px 0;
@@ -68,39 +63,49 @@ nav ul {
 nav li {
   display: inline-block;
   margin-left: 2em; /* Adjust the margin as needed */
-  padding-top: 1em;
+  padding-top: 2em;
 }
 
 nav a {
   color: #444;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 1em;
+  font-size: 1rem;
 }
 
-
-.active {
-
-
-}
-.active a{
+.active a {
   color: black;
 }
 
 h1 {
 
   display: inline-block;
-  margin: 0.5em 2em; /* Adjust the margin as needed */
+  margin: 0.5em 1em; /* Adjust the margin as needed */
   line-height: 1;
   vertical-align: middle;
 }
 
 @media (max-width: 800px) {
   .header-class {
-    background: #55d6aa;
     padding: 0 1em;
     background: #f8f8f8;
+    display: grid;
+    grid-template-columns: 5% 55% 40%;
+    max-width: 100vw
   }
+
+  nav li {
+    display: inline-block;
+    margin-left: 0.5em; /* Adjust the margin as needed */
+    padding-top: 1em;
+  }
+  nav a {
+    color: #444;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+
 }
 
 </style>
