@@ -33,6 +33,8 @@ export default {
 .header-class {
   background: #55d6aa;
   padding: 0 3em;
+  display: grid;
+  grid-template-columns: 2em 10em 20em;
 }
 
 
@@ -46,11 +48,11 @@ header::after {
 .logo {
   padding: 10px 0;
   max-height: 4em;
-  float: left;
+
 }
 
 nav {
-  float: right;
+
 
 }
 
@@ -64,7 +66,7 @@ nav ul {
 
 nav li {
   display: inline-block;
-  margin-left: 100px; /* Adjust the margin as needed */
+  margin-left: 2em; /* Adjust the margin as needed */
   padding-top: 1em;
 }
 
@@ -72,7 +74,7 @@ nav a {
   color: #444;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 1em;
 }
 
 
@@ -87,15 +89,18 @@ nav a {
 h1 {
 
   display: inline-block;
-  margin: 10px 20px; /* Adjust the margin as needed */
+  margin: 0.5em 2em; /* Adjust the margin as needed */
   line-height: 1;
   vertical-align: middle;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 800px) {
+
   .header-class {
     background: #55d6aa;
     padding: 0 1em;
+    background: #f8f8f8;
   }
 }
+
 </style>
