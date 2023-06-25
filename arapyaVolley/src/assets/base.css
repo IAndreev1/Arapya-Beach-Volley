@@ -42,17 +42,12 @@
     }
 }
 
-*,
-*::before,
-*::after {
-
-}
-
-
 body {
+    margin: 0;
     background: linear-gradient(0deg, #FE9B05 0%, #D86404 100%);
-    animation: pulsate 5s ease-in-out infinite;
 }
+
+
 
 
 

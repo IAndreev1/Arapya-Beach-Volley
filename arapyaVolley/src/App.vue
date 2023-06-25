@@ -10,9 +10,9 @@
 
 <script >
 import {RouterLink, RouterView} from 'vue-router'
-import HelloWorld from './components/Field.vue'
-import Field from "@/components/Field.vue";
-import field from "@/components/Field.vue";
+import HelloWorld from './components/NavBar.vue'
+import Field from "@/components/NavBar.vue";
+import field from "@/components/NavBar.vue";
 
 export default {
   name: "App",
@@ -25,24 +25,7 @@ export default {
 
 <style scoped>
 
-.conteiner {
-  position: relative;
-  text-align: center;
-  color: black;
-  display: flex;
-  justify-content: center;
-}
 
-.textA {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -70%); /* Center horizontally and vertically */
-  font-family: 'Montserrat', sans-serif; /* Apply the Montserrat font */
-  font-size: 6em; /* Adjust the font size as needed */
-  opacity: 0.8;
-  color:white ;
-}
 
 .bigPhoto {
 
