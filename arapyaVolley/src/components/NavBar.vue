@@ -39,8 +39,6 @@ export default {
 }
 
 
-
-
 .logo {
   padding: 10px 0;
   max-height: 4em;
@@ -99,6 +97,30 @@ h1 {
     margin-left: 0.5em; /* Adjust the margin as needed */
     padding-top: 1em;
   }
+
+  nav a {
+    color: #444;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 500px) {
+  .header-class {
+    padding: 0 1em;
+    background: #f8f8f8;
+    display: grid;
+    grid-template-columns: 5% 55% 40%;
+    max-width: 100vw
+  }
+
+  nav li {
+    display: inline-block;
+    margin-left: 0.5em; /* Adjust the margin as needed */
+    padding-top: 1em;
+  }
+
   nav a {
     color: #444;
     text-decoration: none;
@@ -106,6 +128,13 @@ h1 {
     font-size: 12px;
   }
 
+  h1 {
+
+    display: inline-block;
+    margin: 0 1em; /* Adjust the margin as needed */
+    vertical-align: middle;
+  }
 }
+
 
 </style>

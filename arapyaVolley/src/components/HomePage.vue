@@ -46,7 +46,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
+  width: 100%;
 }
 
 .container-text {
@@ -80,7 +80,7 @@ export default {
 }
 
 .bigPhoto {
-  max-width: 100vw
+  max-width: 95vw
 }
 
 
