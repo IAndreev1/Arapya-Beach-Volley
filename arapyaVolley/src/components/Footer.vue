@@ -10,7 +10,7 @@
         INSTAGRAM
       </a>
     </div>
-    <p>&copy; 2023 My Website. All rights reserved.</p>
+    <p>&copy; 2023 Arapya Beach Volley. All rights reserved.</p>
   </footer>
 </template>
 
