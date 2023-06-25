@@ -7,6 +7,12 @@
   max-width: 100vw;
 }
 
+@viewport {
+  zoom: 1.0;
+  initial-scale: 1.0;
+  maximum-scale: 1.0;
+  user-scalable: no;
+}
 a,
 .green {
   text-decoration: none;
