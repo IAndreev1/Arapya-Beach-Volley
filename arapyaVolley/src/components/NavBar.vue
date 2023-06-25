@@ -95,7 +95,6 @@ h1 {
 }
 
 @media (max-width: 800px) {
-
   .header-class {
     background: #55d6aa;
     padding: 0 1em;
