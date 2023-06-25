@@ -6,7 +6,7 @@
   </head>
   <body id="MyBody">
 
-  <NavBar active-gallery="yes" active-next="no"/>
+  <NavBar active-gallery="yes" active-next="no" class="header-class"/>
   <div class="container">
 
     <img src="./icons/sofia-1.jpg" class="bigPhoto">
@@ -52,7 +52,12 @@ export default {
 .container-text {
 
 }
-
+.header-class{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
 .textA {
   position: absolute;
   top: 50%;

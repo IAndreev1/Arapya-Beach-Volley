@@ -108,10 +108,10 @@ h1 {
 
 @media (max-width: 500px) {
   .header-class {
-    padding: 0 1em;
+    padding: 0 0.5em;
     background: #f8f8f8;
     display: grid;
-    grid-template-columns: 5% 40% 55%;
+    grid-template-columns: 10% 35% 55%;
     max-width: 100vw
   }
 
@@ -129,10 +129,17 @@ h1 {
   }
 
   h1 {
-
+    padding-top:0.8em;
+    font-size: 1.1em;
     display: inline-block;
     margin: 0 1em; /* Adjust the margin as needed */
     vertical-align: middle;
+
+  }
+  .logo {
+    padding: 0.1em 0;
+    max-height: 4em;
+
   }
 }
 
