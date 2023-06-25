@@ -40,7 +40,7 @@ export default {
 
 
 .logo {
-  padding: 10px 0;
+  padding: 1em 0;
   max-height: 4em;
 
 }
@@ -111,7 +111,7 @@ h1 {
     padding: 0 1em;
     background: #f8f8f8;
     display: grid;
-    grid-template-columns: 5% 55% 40%;
+    grid-template-columns: 5% 40% 55%;
     max-width: 100vw
   }
 
