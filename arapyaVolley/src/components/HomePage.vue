@@ -1,17 +1,27 @@
 <template>
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 
   </head>
-  <body id = "MyBody">
+  <body id="MyBody">
 
   <NavBar active-gallery="yes" active-next="no"/>
-  <div class="conteiner">
+  <div class="container">
+
     <img src="./icons/sofia-1.jpg" class="bigPhoto">
-    <h1 class="textA">Arapya Beach Volley</h1>
+
   </div>
-  <img src="./icons/sofia-1.jpg" class="bigPhoto">
+  <div class="container">
+    <div>
+      AAAA
+    </div>
+
+  </div>
+  <div class="container">
+    <img src="./icons/sofia-1.jpg" class="bigPhoto">
+
+  </div>
   </body>
 </template>
 
@@ -32,12 +42,15 @@ export default {
 </script>
 
 <style scoped>
-.conteiner {
-  position: relative;
-  text-align: center;
-  color: black;
+.container {
   display: flex;
   justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.container-text {
+
 }
 
 .textA {
@@ -51,9 +64,12 @@ export default {
   color: white;
 }
 
-#MyBody {
-
+.textA1 {
+  position: static;
+  transform: none;
+  font-size: 3em;
 }
+
 
 .navbar {
   overflow: hidden;
@@ -63,6 +79,9 @@ export default {
   width: 100%; /* Full width */
 }
 
+.bigPhoto {
+  max-width: 100vw
+}
 
 .clearfix:after {
   content: ".";
@@ -78,6 +97,7 @@ export default {
   padding: 10px 5%;
 
 }
+
 .site-header h1 {
   margin: 0;
 }
