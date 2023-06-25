@@ -35,6 +35,7 @@ export default {
   padding: 0 3em;
   display: grid;
   grid-template-columns: 2em 10em 20em;
+  max-width: 100vw
 }
 
 
