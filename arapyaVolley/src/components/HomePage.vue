@@ -40,6 +40,7 @@
       </p>
       <img src="./icons/shamp.jpg" class="smallImgVer">
     </div>
+    <br>
     <CountDown/>
     <br>
   </main>

@@ -28,7 +28,7 @@
 .contact-page {
   max-width: 90vw;
   margin: 0 auto;
-  padding: 12em;
+  padding: 5em 5em 19em;
   background-color: #f5f5f5;
   border-radius: 8px;
 }
