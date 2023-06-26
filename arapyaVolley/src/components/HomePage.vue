@@ -165,6 +165,7 @@ main {
   }
 
   .smallText {
+    max-height: 100%;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.1em;
     padding: 1em;
