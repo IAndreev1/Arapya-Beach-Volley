@@ -83,6 +83,9 @@ h1 {
   line-height: 1;
   vertical-align: middle;
 }
+a:hover{
+  color: black;
+}
 
 @media (max-width: 920px) {
   .header-class {
