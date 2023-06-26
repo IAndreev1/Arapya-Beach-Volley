@@ -161,13 +161,12 @@ main {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 50% 50%;
-    width: 100%;
-    max-width: 80vw;
+
   }
 
   .smallText {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.4em;
+    font-size: 1.3em;
     padding: 1em;
     justify-self: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
