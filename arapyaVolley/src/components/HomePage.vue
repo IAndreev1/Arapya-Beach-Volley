@@ -167,8 +167,8 @@ main {
   .smallText {
     max-height: 100%;
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.1em;
-    padding: 1em;
+    font-size: 1em;
+    padding: 0.5em;
     justify-self: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     color: white;
