@@ -22,8 +22,7 @@
 </template>
 
 <script>
-import Countdown from 'countdown';
-
+import * as Countdown from 'countdown';
 export default {
   data() {
     return {
@@ -47,7 +46,6 @@ export default {
         Countdown(new Date(targetDate), (ts) => {
           console.log(ts.days)
           this.countdownValue = {
-            mounts:ts.mounts,
             days: ts.days,
             hours: ts.hours,
             minutes: ts.minutes,
