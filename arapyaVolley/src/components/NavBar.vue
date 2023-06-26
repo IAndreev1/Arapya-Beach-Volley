@@ -30,7 +30,7 @@ export default {
 
 <style scoped>
 .header-class {
-  background: white;
+  background: #f8f8f8;
   padding: 0 3em;
   display: grid;
   grid-template-columns: 10% 50% 40%;
@@ -110,41 +110,39 @@ a:hover{
   }
 }
 
-@media (max-width: 500px) {
-  .header-class {
-    padding: 0 0.5em;
-    background: #f8f8f8;
-    display: grid;
-    grid-template-columns: 10% 35% 55%;
-    max-width: 100vw
-  }
 
-  nav li {
-    display: inline-block;
-    margin-left: 0.5em; /* Adjust the margin as needed */
-    padding-top: 1em;
-  }
+  @media (max-width: 580px) {
+    .header-class {
+      padding: 0 0.5em;
+      background: #f8f8f8;
+      display: grid;
+      grid-template-columns: 10% 35% 55%;
+      max-width: 100vw;
+    }
 
-  nav a {
-    color: #444;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 12px;
-  }
+    nav li {
+      display: inline-block;
+      margin-left: 0.5em; /* Adjust the margin as needed */
+      padding-top: 1em;
+    }
+    nav a {
+      font-size: 12px;
+      padding: 0.2em 0.6em;
+    }
 
-  h1 {
-    padding-top:0.8em;
-    font-size: 1.1em;
-    display: inline-block;
-    margin: 0 1em; /* Adjust the margin as needed */
-    vertical-align: middle;
+    h1 {
+      padding-top: 0.8em;
+      font-size: 1.1em;
+      display: inline-block;
+      margin: 0 1em; /* Adjust the margin as needed */
+      vertical-align: middle;
+    }
 
-  }
-  .logo {
-    padding: 0.1em 0;
-    max-height: 4em;
+    .logo {
+      padding: 0.1em 0;
+      max-height: 4em;
+    }
 
-  }
 }
 
 

@@ -132,6 +132,9 @@ main {
   text-align: center;
   font-weight: bold;
 }
+p{
+  align-self: center;
+}
 .smallImgHor:hover{
   transform: scale(1.1); /* Increase the scale factor to make the image larger */
   transition: transform 0.3s ease-in-out;
