@@ -98,7 +98,7 @@ a:hover{
 
   nav li {
     display: inline-block;
-    margin-left: 0.5em; /* Adjust the margin as needed */
+    margin-left: 0.3em; /* Adjust the margin as needed */
     padding-top: 1.5em;
   }
 
@@ -122,7 +122,7 @@ a:hover{
 
     nav li {
       display: inline-block;
-      margin-left: 0.5em; /* Adjust the margin as needed */
+      margin-left: 0.3em; /* Adjust the margin as needed */
       padding-top: 1em;
     }
     nav a {
