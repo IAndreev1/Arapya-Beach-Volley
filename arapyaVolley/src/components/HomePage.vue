@@ -166,7 +166,7 @@ main {
 
   .smallText {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.3em;
+    font-size: 1.1em;
     padding: 1em;
     justify-self: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -178,10 +178,10 @@ main {
   .smallImgHor {
     max-width: 90%;
     margin: 1em;
-    padding: 1em;
     justify-self: center;
     border-radius: 10%;
-
+    overflow: hidden;
+    max-height: 100%;
   }
 
   .smallImgVer {
@@ -190,7 +190,7 @@ main {
     padding: 1em;
     justify-self: center;
     border-radius: 10%;
-
+    max-height: 100%;
 
   }
 
