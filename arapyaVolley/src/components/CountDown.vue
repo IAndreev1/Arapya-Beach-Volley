@@ -37,18 +37,23 @@ export default {
   },
   methods: {
     startCountdown() {
-      const targetDate = new Date('2023-12-31T23:59:59'); // Replace with your target date and time
+      const targetDate = new Date('2023-07-29T10:00:00');// Replace with your target date and time
       const now = new Date();
+      console.log(now)
+
       const difference = targetDate - now;
 
       if (difference > 0) {
         Countdown(new Date(targetDate), (ts) => {
+          console.log(ts.days)
           this.countdownValue = {
+            mounts:ts.mounts,
             days: ts.days,
             hours: ts.hours,
             minutes: ts.minutes,
             seconds: ts.seconds,
           };
+
         });
       } else {
         // Countdown has already reached the target date

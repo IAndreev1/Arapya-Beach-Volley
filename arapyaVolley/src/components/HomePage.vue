@@ -10,7 +10,7 @@
     <div class="containerM">
       <img src="./icons/firstPic.jpg" class="bigPhoto">
     </div>
-    <CountDown/>
+
     <div class="container">
       <img src="./icons/dronSnimka.jpg" class="smallImgHor">
       <p class="smallText">Статиите в Уикипедия често са цитирани както от медиите, така и в академичните среди:
@@ -40,7 +40,10 @@
       </p>
       <img src="./icons/shamp.jpg" class="smallImgVer">
     </div>
+    <CountDown/>
+    <br>
   </main>
+
   <Footer/>
   </body>
 </template>
@@ -51,7 +54,6 @@ import {defineComponent} from "vue";
 import field from "@/components/NavBar.vue";
 import NavBar from "@/components/NavBar.vue";
 import Footer from "@/components/Footer.vue";
-import Countdown from 'countdown'
 import CountDown from "@/components/CountDown.vue";
 export default {
   components: {Footer, NavBar, field,CountDown},
@@ -60,30 +62,6 @@ export default {
       external: ['/src/assets/FIRST.jpg']
     }
   },
-  data() {
-    return {
-      countdownValue: null,
-    };
-  },
-  methods: {
-    startCountdown() {
-      const targetDate = new Date('2023-07-29T10:59:59'); // Replace with your target date and time
-      const now = new Date();
-      const difference = targetDate - now;
-
-      if (difference > 0) {
-        Countdown(new Date(targetDate), (ts) => {
-          this.countdownValue = ts;
-        });
-      } else {
-        // Countdown has already reached the target date
-        this.countdownValue = null;
-      }
-    },
-  },
-  mounted() {
-    this.startCountdown();
-  }
 }
 
 </script>
