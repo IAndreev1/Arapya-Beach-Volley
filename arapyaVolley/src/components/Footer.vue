@@ -2,11 +2,11 @@
   <footer class="footer">
     <div class="social-icons">
       <a href="https://www.facebook.com/profile.php?id=100083515876362" target="_blank" rel="noopener noreferrer">
-        <img src="./icons/facebook.png" alt="Instagram" class=" icon"/>
+        <img src="./icons/facebook.png" alt="Facebook" class=" icon"/>
         FACEBOOK
       </a>
-      <a href="#" target="_blank" rel="noopener noreferrer">
-        <img src="./icons/insta.png" alt="Facebook" class="icon"/>
+      <a href="https://www.instagram.com/arapya_beach_volley/" target="_blank" rel="noopener noreferrer">
+        <img src="./icons/insta.png" alt="Instagram" class="icon"/>
         INSTAGRAM
       </a>
     </div>
