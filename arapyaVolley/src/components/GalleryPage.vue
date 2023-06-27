@@ -33,7 +33,14 @@ export default {
       this.isImageEnlarged = !this.isImageEnlarged;
       this.enlargedImageSrc = event.target.src;
     }
-  }
+  },
+  created() {
+    // Scroll to the top of the page when the component is mounted
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  },
 };
 </script>
 
@@ -43,9 +50,12 @@ export default {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 20px;
   align-items: center;
+  padding-top: 6em;;
+
 }
 
 .gallery img {
+  animation: fade-in 0.5s ease-in-out forwards;
   width: 100%;
   padding: 1em;
   max-height: 30em;
@@ -53,7 +63,22 @@ export default {
   border-radius: 10%;
   cursor: pointer;
 }
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
+.header-class {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
 .enlarged-image-container {
   position: fixed;
   top: 0;
