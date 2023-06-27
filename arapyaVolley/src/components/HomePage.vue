@@ -63,6 +63,13 @@ export default {
       external: ['/src/assets/FIRST.jpg']
     }
   },
+  created() {
+    // Scroll to the top of the page when the component is mounted
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  },
 }
 
 </script>

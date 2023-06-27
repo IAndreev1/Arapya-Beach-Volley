@@ -24,7 +24,27 @@
   <Footer/>
 </template>
 
+
+<script>
+export default {
+  created() {
+    // Scroll to the top of the page when the component is mounted
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  },
+}
+</script>
 <style scoped>
+
+.header-class {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
 .contact-page {
   max-width: 90vw;
   margin: 0 auto;
