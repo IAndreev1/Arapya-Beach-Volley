@@ -126,7 +126,7 @@ a:hover{
       padding-top: 1em;
     }
     nav a {
-      font-size: 12px;
+      font-size: 2vw;
       padding: 0.2em 0.6em;
     }
 
